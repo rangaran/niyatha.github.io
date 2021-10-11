@@ -12,7 +12,10 @@ body.classList.toggle('open');
 
 });
 nav.addEventListener('click',function(){
-    body.classList.toggle('open');
+    var x = screen.width;
+    if(x<=900)
+        {body.classList.toggle('open');}
+    
     
     });
 
