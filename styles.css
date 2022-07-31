@@ -14,7 +14,7 @@
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
-    --body-font-color: #515151;
+    --body-font-color: #ffffff;
 }
 
 html{
@@ -50,7 +50,8 @@ p{
     max-width:122.5rem;
     margin: 0 auto;
     padding: 0 2.4rem;
-
+    
+    
 }
 header{
     width:100%;
@@ -158,17 +159,18 @@ header{
 .hero{
     width: 100%;
     height:100vh;
-    background: url("images/mainpic.jpg") center no-repeat;
+    background-color: black;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content:center;
     text-align: center;
-
+    
 }
 
 .sub-headline{
     font-size: 8.5rem;
+    padding-bottom: 1em;
     font-family: var(--secondary-font);
     color: #fff;
     font-weight:100;
@@ -211,7 +213,27 @@ animation: scale .5s forwards;
     background-color: #fff;
     position: relative;
 }
+#particles-js canvas {
+    position : relative; width:100%; height:100%; z-index:-1;
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
 
+* remove canvas default margin */
+canvas{
+	display:block;
+	/* vertical-align:bottom; */
+}
+
+#particles-js{
+	width:100%;
+	height:100%;
+}
 .line-right::before,
 .line-left::before{
     content:'';
@@ -297,7 +319,7 @@ animation: scale .5s forwards;
 }
 .info{
     text-align: center;
-
+    
 }
 .description{
     margin-bottom: 3rem;
@@ -339,23 +361,27 @@ animation: scale .5s forwards;
 }
 
 .software{
-    background: url("images/software.jpg") center no-repeat;
+    background-color: black;
     background-size: cover;
+   
 }
 .between{
-    min-height: 65vh;
-    display: flex;
+
     align-items: center;
+    
 }
 .image-group{
     display:grid;
-    grid-template-columns: repeat(2,0.5fr);
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
 }
 
-
+#ABC {
+    background-color: rgb(0, 0, 0);
+   
+  }
 .painter{
-    background: url("images/painting.jpg") center no-repeat;
+    background-color: black;
     background-size: cover;
     
 }
@@ -423,6 +449,7 @@ footer{
 .social-icons{
     list-style: none;
     margin-bottom: 5.4rem;
+    padding-left: 30rem;
     display: flex;
     justify-content: center;
 }
@@ -511,6 +538,7 @@ footer{
     }
     .info{
         display: flex;
+       
         align-items: center;
     }
     .info > div{

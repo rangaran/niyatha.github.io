@@ -1,5 +1,88 @@
 <!doctype html>
 <html lang="en">
+    <style>
+        .containers {
+           display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          height: 50vh;
+          padding-bottom: 20em;
+      
+          /* perspective: 1500px;  */
+      
+          
+        }
+        /* cards spinner style */
+        .cards-spinner {
+          /* short hand properties */
+          animation: spinner 15s linear infinite;
+      
+          transform-style: preserve-3d;
+      
+          display: grid;
+        }
+        @keyframes spinner {
+          from {
+            transform: rotateY(0);
+          }
+          to {
+            transform: rotateY(360deg);
+          }
+        }
+        /* set cards width some styles */
+        .cards {
+          width: 35rem;
+          background-color: rgba(255, 0, 0, 0.5);
+          padding-left: 5rem;
+      
+          /* all cards in same row and columns */
+          grid-area: 1 / 1;
+      
+          border-radius: 1rem;
+          box-shadow: 0 0 10px black;
+        }
+      
+        /* cards body style */
+        .card-body {
+          /* background-color: #ddd; */
+          padding: 1rem;
+          color: #ff0000;
+      
+          border-radius: 0 1rem 1rem 0;
+          text-align: center;
+        }
+        /* cards button style */
+        .card-btn {
+          background-color: #ff0000;
+          color: #fff;
+          padding: 0.5rem;
+        }
+      
+        .card-1 {
+          transform: rotateY(0) translateX(160px);
+        }
+        .card-2 {
+          transform: rotateY(-60deg) translateX(160px);
+        }
+        .card-3 {
+          transform: rotateY(-120deg) translateX(160px);
+        }
+        .card-4 {
+          transform: rotateY(-180deg) translateX(160px);
+        }
+        .card-5 {
+          transform: rotateY(-240deg) translateX(160px);
+        }
+        .card-6 {
+          transform: rotateY(-300deg) translateX(160px);
+        }
+      
+        /* stop animation when hover over the mouse */
+        .cards-spinner:hover {
+          animation-play-state: paused;
+        }
+      </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -11,6 +94,9 @@
 </head>
 <body class>
 <header>
+
+  
+  </div> 
     <div class="container">
         <nav class="nav">
             <div class="menu-toggle">
@@ -26,7 +112,7 @@
                     <a href="#proj" class="nav-link active" >Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#paintings" class="nav-link active">Paintings</a>
+                    <a href="#paintings" class="nav-link active" >Paintings</a>
                 </li>
               
                 <li class="nav-item">
@@ -35,8 +121,9 @@
                 
             </ul>
         </nav>
+        
     </div>
-
+    <div id="particles-js"> </div>
 </header>
 
 <section class="hero" id="hero">
@@ -53,21 +140,24 @@
             </div>
         </div>
     </div>
+    
 </section>
 
-<section class="discover-our-story">
+<!-- <section class="hero" id="hero">
     <div class="container">
         <div class="info">
             <div class="description padding-right animate-left">
                 <div class="global-headline">
-                    <h2 class="headline headline-dark" id= "me">
-                        <span class="first-letter">M</span>y Story</h1>
+                  <h2 class="sub-headline" id= "proj">
+                    <p></p>
+                    <span class="first-letter">M</span>y Story
+                </h2>
                 </div>
                 <p>
                     My end goal is building Humane Technlogy. My areas of interest involve social media architecture and cloud based techologies. 
                     Building products that allow more user focussed feed that would be guided by ethical standards like supporting mental health, productivity, etc. is something I am passionate about.
-                    I am currently part of a Cloud Engineering role at TD and I'm also learning more about REST APIs, cloud platforms like GCP, AZure, AWS,etc. through side projects              
-                    to see this vision through. I'm also working on (long list I know :) ) an app catered for university students to increase their accessibility to mental health services. Shoot me an email if you're
+                    I am currently part of a Cloud Engineering role at TD and I'm also learning more about REST APIs, cloud platforms like GCP, Azure, AWS,etc. through side projects              
+                    to see this vision through. I'm building an app (super excited for this to be used soon) catered for university students to increase their accessibility to mental health services. Shoot me an email if you're
                     interested in this field or want to know more about this project :)
                     
                 </p>
@@ -76,8 +166,34 @@
             
         </div>
     </div>
-</section>
+</section> -->
 
+<section class="software between">
+  <!-- <div class="container"> -->
+      <div class="global-headline">
+          <div class="animate-top">
+              <h2 class="sub-headline" id= "me">
+                  <span class="first-letter">M</span>y Story
+              </h2>
+          </div>
+          
+      </div>
+      
+  </div>
+
+  </section>
+  <section class="software between">
+    <div class="container">
+      <div class="info">
+        <p>My end goal is building Humane Technlogy. My areas of interest involve social media architecture and cloud based techologies. 
+        Building products that allow more user focussed feed that would be guided by ethical standards like supporting mental health, productivity, etc. is something I am passionate about.
+        I am currently part of a Cloud Engineering role at TD and I'm also learning more about REST APIs, cloud platforms like GCP, Azure, AWS,etc. through side projects              
+        to see this vision through. I'm building an app (super excited for this to be used soon) catered for university students to increase their accessibility to mental health services. Shoot me an email if you're
+        interested in this field or want to know more about this project :) </p>
+        </div>
+    </p>
+    </div>
+    </section>
 <section class="software between">
 <div class="container">
     <div class="global-headline">
@@ -90,43 +206,80 @@
     </div>
 </div>
 </section>
-<section class="Projects">
-    <div class="container">
-        <div class="info">
-            <div class="image-group padding-right animate-left">
-               <a href="https://github.com/rangaran/Spelunky-remake/"><img src="images/lunky.png" alt=""></a>
-               <a href="https://github.com/rangaran/AutoPlanner"><img src="images/planner.png" alt=""></a>
-               <a href="https://github.com/rangaran/UniversitEats"><img src="images/eats.png" alt=""></a>
-                <a href="https://github.com/rangaran/Negative-Comment-Blocker"><img src="images/poscom.png" alt=""></a>
-               
-            </div>
-            <div class="description animate-right">
-                <p style="color: black; font-size: medium; padding-right: 20rem;" > Here are links to some of my most recent projects</p>
-                <a href="#" class="btn body-btn">Back to the top</a>
-            </div>
+<div class="containers">
+    <div class="cards-spinner">
+      <!-- card 1 -->
+      <div class="cards card-1" >
+  
+        <div class="card-body">
+          <h1>Spelunky Game Remake</h1>
+          <a href="https://github.com/rangaran/Spelunky-remake/"><img src="images/lunky.png" alt=""></a>
+              
+          <button onclick = "location.href='https://rangaran.github.io/'" class="card-btn" type="button">Click Me</button>
         </div>
-    </div>
-</section>
+      </div>
+  
+      <!-- card 2 -->
+      <div class="cards card-2">
+        <div class="card-body">
+          <h1>Plan Assignment Due Dates</h1>
+          <a href="https://github.com/rangaran/AutoPlanner"><img src="images/planner.png" alt=""></a>
+          
+          <button onclick = "location.href='https://rangaran.github.io/'" class="card-btn">Click Me</button>
+        </div>
+      </div>
+  
+      <!-- card 3 -->
+      <div class="cards card-3">
+        <div class="card-body">
+          <h1>Find You're Nearest Restauarant</h1>
+          <a href="https://github.com/rangaran/UniversitEats"><img src="images/eats.png" alt=""></a>
 
-<section class="painter between">
+          <button onclick = "location.href='https://rangaran.github.io/'" class="card-btn">Click Me</button>
+        </div>
+      </div>
+  
+      <!-- card 4 -->
+      <div class="cards card-4">
+        <div class="card-body">
+          <h1>Positive Youtube Comments</h1>
+          <a href="https://github.com/rangaran/Negative-Comment-Blocker"><img src="images/poscom.png" alt=""></a>
+          <button onclick = "location.href='https://rangaran.github.io/'" class="card-btn">Click Me</button>
+        </div>
+      </div>
+  
+      <!-- card 5 -->
+      <div class="cards card-5">
+        <div class="card-body">
+          <h1>Acccess to Mental Health Resources</h1>
+          <a href="https://github.com/rangaran/Negative-Comment-Blocker"><img src="images/poscom.png" alt=""></a>
+          <button onclick = "location.href='https://rangaran.github.io/'" class="card-btn">Click Me</button>
+        </div>
+      </div>
+  
+      
+  
+      
+    </div>
+
+  </div>
+
+
+  <section class="software between">
     <div class="container">
         <div class="global-headline">
             <div class="animate-top">
-                <h2 class="sub-headline">
+                <h2 class="sub-headline" id= "paintings">
                     <span class="first-letter">P</span>aintings
                 </h2>
             </div>
-            <div class="animate-bottom">
-                
-                <h1 style="color: rgb(252, 252, 252);  padding-top: 2rem; " id= "paintings" >Oil/Arcylic/Mixed medium</h1>
-    
-            </div>
+            
         </div>
     </div>
     </section>
 
 
-<section class="Paintings">
+<section class="software between"  >
     <div class="container">
         <div class="info">
             <div class="description padding-right animate-left">
@@ -136,7 +289,7 @@
             <a href="#" class="btn body-btn">Back to the top</a>
             <p>&nbsp;</p>
             </div>
-            <div class="image-group" animate-right>
+            <div class="image-group" >
                 <img  class="animate-top" src="images/arabpainting.JPG" alt="">
                 <img  class="animate-bottom" src="images/horse.JPG" alt="">
                 <img  class="animate-bottom" src="images/abstract.jpg" alt="">
@@ -144,7 +297,9 @@
             </div>
        
     </div>
+    
     </div>
+    
 </div>
 </section>
 
@@ -161,33 +316,35 @@
             </div>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <div class="footer-content-divider animate-bottom">
+            
+            <div class="footer-content-divider animate-bottom" >
              
-                <h4>Social media</h4>
                 <ul class="social-icons">
                     
                     <li>
-                        <a href="https://github.com/rangaran"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/rangaran"><i class="fab fa-github" style = "color:white"></i></a>
                     </li>
+                    
                     <li>
-                        <a href="https://devpost.com/rangaran"><img src="images/dev.png" style=" padding-top: 0.5em; height: 3rem;width: 2.5rem; background-color: aliceblue; "></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/niyatha-rangarajan/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://linkedin.com/in/niyatha-rangarajan/"><i class="fab fa-linkedin-in" ></i></a>
 
                     </li>
                     
-                </ul>
-                <h4> Email me</h4>
+                
                     <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=rangaran@mcmaster.ca"
             ><i class="fas fa-envelope" style="font-size: 2rem; color:white"></i>
                    </a>
-               
+                  </ul>
             </div>
         </div>
+       
     </div>
+
+    
 </footer>
+
 <script src="main.js"></script>
+
 </body>
 </html>
