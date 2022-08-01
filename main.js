@@ -56,7 +56,7 @@ particlesJS('particles-js', {
     opacity: 1,
     size: 4,
     size_random: true,
-    nb: 150,
+    nb: 500,
     line_linked: {
       enable_auto: true,
       distance: 100,
@@ -77,7 +77,7 @@ particlesJS('particles-js', {
   interactivity: {
     enable: true,
     mouse: {
-      distance: 250
+      distance: 200
     },
     detect_on: 'canvas', // "canvas" or "window"
     mode: 'grab',

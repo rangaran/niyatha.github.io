@@ -23,14 +23,20 @@ html{
     color: var(--body-font-color);
     scroll-behavior: smooth;
 }
-
+.gaps {
+   
+    padding-top: 60px;
+    
+   
+   
+    }
 /*no flicker*/
 body{
     overflow-x: hidden;
 }
 
 section{
-    padding: 3.9rem 0;
+    padding: 1rem 0;
     overflow-x:hidden;
 }
 img{
@@ -224,7 +230,7 @@ animation: scale .5s forwards;
     transition: opacity .8s ease, transform 1.4s ease
 }
 
-* remove canvas default margin */
+
 canvas{
 	display:block;
 	/* vertical-align:bottom; */
@@ -322,12 +328,12 @@ canvas{
     
 }
 .description{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .description p{
     line-height:1.6;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1rem;
 }
 
 .body-btn{
@@ -386,6 +392,7 @@ canvas{
     
 }
 
+    
 footer{
     padding: 7.9rem 0;
     background-color: #121212;
@@ -479,7 +486,8 @@ footer{
 
 @media screen and (min-width:900px){
     section{
-        padding:7.9rem;
+        padding:2rem;
+        padding-bottom: 4rem;
     }
 
     .menu-toggle{
@@ -538,7 +546,8 @@ footer{
     }
     .info{
         display: flex;
-       
+       padding-top: 4rem;
+       padding-bottom: 6rem;
         align-items: center;
     }
     .info > div{
