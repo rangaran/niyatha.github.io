@@ -15,7 +15,8 @@ body.classList.toggle('open');
 nav.addEventListener('click',function(){
     var x = screen.width;
     if(x<=900)
-        {body.classList.toggle('open');}
+        {body.classList.toggle('open');
+      particles.nb = 10;}
     
     
     });
@@ -54,9 +55,9 @@ particlesJS('particles-js', {
     color: '#fff',
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: 1,
-    size: 4,
+    size: 7,
     size_random: true,
-    nb: 500,
+    nb: 250,
     line_linked: {
       enable_auto: true,
       distance: 100,
@@ -71,7 +72,7 @@ particlesJS('particles-js', {
     },
     anim: {
       enable: true,
-      speed: 9
+      speed: 7
     }
   },
   interactivity: {
@@ -88,7 +89,7 @@ particlesJS('particles-js', {
       onclick: {
         enable: true,
         mode: 'push', // "push" or "remove" (particles)
-        nb: 4
+        nb: 1
       }
     } 
   },
