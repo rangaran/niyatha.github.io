@@ -456,7 +456,7 @@ footer{
 .social-icons{
     list-style: none;
     margin-bottom: 5.4rem;
-    padding-left: 30rem;
+    padding-left: 0rem;
     display: flex;
     justify-content: center;
 }
