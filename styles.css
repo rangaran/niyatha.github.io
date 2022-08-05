@@ -30,11 +30,7 @@ html{
    
    
     }
-    body {
-        position: relative;
-        background: #00222B;
-        
-      }
+   
       
       canvas#canvas {
         display: block;
@@ -240,15 +236,12 @@ animation: scale .5s forwards;
 }
 
 
-canvas{
+/* canvas{
 	display:block;
 	/* vertical-align:bottom; */
-}
 
-#particles-js{
-	width:100%;
-	height:100%;
-}
+
+
 .line-right::before,
 .line-left::before{
     content:'';
