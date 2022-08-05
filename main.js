@@ -76,7 +76,7 @@ sr.reveal('.animate-bottom',{
     var Y = canvas.height = window.innerHeight;
     var mouseX = null;
     var mouseY = null;
-    var shapeNum = 300;
+    var shapeNum = 100;
     var shapes = [];
     var style = {
       black: 'black',

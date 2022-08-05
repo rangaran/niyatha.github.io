@@ -36,8 +36,10 @@ html{
         display: block;
       }
 /*no flicker*/
+
 body{
     overflow-x: hidden;
+    
 }
 
 section{
